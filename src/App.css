@@ -1,32 +1,158 @@
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
 .App {
-  text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+nav {
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-list {
+  margin: auto;
+}
+
+.navbar-link {
+  display: inline;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+
+.icons-social a {
+  color: #4B5658;
+  margin: 10px;
+}
+
+.icons-social a svg path{
+	fill: #4B5658;
+}
+
+.home {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 150px;
+}
+
+.hello {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #4B5658;
+}
+
+.tagline {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #4B5658;
+  margin-bottom: 40px;
+}
+.about {
+  height: 100vh;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  color: #4B5658;
+}
+
+.about-header {
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.about-text p span {
+  background-color: rgb(195, 204, 212)
+}
+.bg-main {
+  background-color: #4B5658;
+}
+.test {
+  height: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.project-item {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  background-color: #4B5658;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
   color: white;
+  margin: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.component-container {
+  padding: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+}
+.project-desc {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0 0.5rem;
+}
+.project-icons {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 1rem 0;
+}
+
+
+.project-icons i {
+  margin: 0 0.25rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0 0 0.75rem;
 }
